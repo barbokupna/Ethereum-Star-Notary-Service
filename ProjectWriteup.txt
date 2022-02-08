@@ -1,5 +1,4 @@
-1. GitHub https://github.com/barbokupna/Ethereum-Coffee-Supply-Chain.git
-2. UML: https://github.com/barbokupna/Ethereum-Coffee-Supply-Chain.git/UML
+1. GitHub https://github.com/barbokupna/Ethereum-Star-Notary-Service.git
 
 3. Libraries used: 
 	web3
