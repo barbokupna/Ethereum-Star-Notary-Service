@@ -1,0 +1,29 @@
+1. GitHub https://github.com/barbokupna/Ethereum-Coffee-Supply-Chain.git
+2. UML: https://github.com/barbokupna/Ethereum-Coffee-Supply-Chain.git/UML
+
+3. Libraries used: 
+	web3
+	typescript
+
+	
+4.  Versions used
+
+node          v12.13.0
+npm           6.12.0
+python        2.7.18
+ganache-cli   v6.7.0 (ganache-core: 2.8.0)
+truffle       v5.4.32
+solii
+
+
+5. contract: 
+    
+    0x40352F412B22C9F555806ab5Ea1E4128A0484dc3
+   
+
+
+
+
+Transaction History: 
+
+  

@@ -28,6 +28,12 @@
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
+
+const HDWalletProvider = require('truffle-hdwallet-provider');
+const infuraKey = "c72941ff3c594156aa6ffda1433e851e";
+const fs = require('fs');
+const mnemonic = "motor satoshi bean taxi client lyrics process artist noodle punch person scissors";
+
 module.exports = {
   /**
    * Networks define how you connect to your ethereum client and let you set the
@@ -51,9 +57,11 @@ module.exports = {
       port: 8545,            // Standard Ethereum port (default: none)
       network_id: "*"      // Any network (default: none)
     },
-    develop: {
-      port: 8545,
-
+    rinkeby: {
+      provider: () => new HDWalletProvider(mnemonic, `https://rinkeby.infura.io/v3/${infuraKey}`),
+        network_id: 4 ,  // rinkeby's id
+     
+        from: "0x3de5326e4FA15F48761DF56e1911AEf09a8cab14"
     }
 
     // Another network with more advanced options...
@@ -91,17 +99,14 @@ module.exports = {
   },
 
   // Configure your compilers
-  compilers: {
-    solc: {
-      //  version: "0.5.1",    // Fetch exact version from solc-bin (default: truffle's version)
-      // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
-      // settings: {          // See the solidity docs for advice about optimization and evmVersion
-      //  optimizer: {
-      //    enabled: false,
-      //    runs: 200
-      //  },
-      //  evmVersion: "byzantium"
-      // }
-    }
-  }
+  compilers: { solc: {
+
+    version: "0.5.16", // Fetch exact version from solc-bin (default: truffle's version)
+    
+
+    
+    // docker: true, // Use "0.5.1" you've installed locally with docker (default: false)
+    
+    // settings: { // See the solidity docs for advice about optimization and evmVersion // optimizer: { // enabled: false, // runs: 200 // }, // evmVersion: "byzantium" //
+   } }
 }

@@ -15,7 +15,9 @@ contract StarNotary is ERC721 {
     // name: Is a short name to your token
     // symbol: Is a short string like 'USD' -> 'American Dollar'
     string public constant tokenname = "BRB Token";
-    string public constant symbol = "BRBT";
+    string public constant symbol = "BRBT2";
+    
+
 
     // mapping the Star with the Owner Address
     mapping(uint256 => Star) public tokenIdToStarInfo;
